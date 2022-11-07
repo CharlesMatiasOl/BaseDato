@@ -62,5 +62,52 @@ namespace pryMatiasBaseDatos
             }
         }
 
+        private void btnEliminarRegistro_Click(object sender, EventArgs e)
+        {
+            string codigo = Convert.ToString(txtCodigoDeportista.Text);
+
+
+            try
+            {
+
+                conexionBase = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source =" + rutaDeportista);
+                queQuieroDeportista.Connection = conexionBase;
+                conexionBase.Open();
+
+                queQuieroDeportista.CommandType = CommandType.Text;
+                queQuieroDeportista.CommandText = "DELETE FROM DEPORTISTA " +
+                    "WHERE('" + codigo + "'=[CODIGO DEPORTISTA])";
+                queQuieroDeportista.ExecuteNonQuery();
+                MessageBox.Show("El registro fue eleminado");
+
+
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Tu registro no fue elminado");
+                //throw;
+            }
+            conexionBase.Close();
+
+        }
+
+        private void Verificacion()
+        {
+            if (txtCodigoDeportista.Text != "")
+            {
+                btnEliminarRegistro.Enabled = true;
+            }
+            else
+            {
+                btnEliminarRegistro.Enabled = false;
+
+            }
+        }
+
+        private void txtCodigoDeportista_TextChanged(object sender, EventArgs e)
+        {
+            Verificacion();
+        }
     }
 }

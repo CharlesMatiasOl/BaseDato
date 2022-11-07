@@ -37,8 +37,13 @@
             this.clDeporte = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnListarEntrenadores = new System.Windows.Forms.Button();
             this.gpConsulta = new System.Windows.Forms.GroupBox();
+            this.grpEliminarRegistro = new System.Windows.Forms.GroupBox();
+            this.txtCodigoEntrenador = new System.Windows.Forms.TextBox();
+            this.lblCodigoEntrenador = new System.Windows.Forms.Label();
+            this.btnEliminarRegistro = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgEntrenadores)).BeginInit();
             this.gpConsulta.SuspendLayout();
+            this.grpEliminarRegistro.SuspendLayout();
             this.SuspendLayout();
             // 
             // dtgEntrenadores
@@ -114,17 +119,63 @@
             this.gpConsulta.TabStop = false;
             this.gpConsulta.Text = "Consulta";
             // 
+            // grpEliminarRegistro
+            // 
+            this.grpEliminarRegistro.Controls.Add(this.txtCodigoEntrenador);
+            this.grpEliminarRegistro.Controls.Add(this.lblCodigoEntrenador);
+            this.grpEliminarRegistro.Controls.Add(this.btnEliminarRegistro);
+            this.grpEliminarRegistro.Location = new System.Drawing.Point(393, 338);
+            this.grpEliminarRegistro.Name = "grpEliminarRegistro";
+            this.grpEliminarRegistro.Size = new System.Drawing.Size(304, 85);
+            this.grpEliminarRegistro.TabIndex = 10;
+            this.grpEliminarRegistro.TabStop = false;
+            this.grpEliminarRegistro.Text = "Eliminar registro";
+            // 
+            // txtCodigoEntrenador
+            // 
+            this.txtCodigoEntrenador.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtCodigoEntrenador.Location = new System.Drawing.Point(171, 19);
+            this.txtCodigoEntrenador.Name = "txtCodigoEntrenador";
+            this.txtCodigoEntrenador.Size = new System.Drawing.Size(115, 20);
+            this.txtCodigoEntrenador.TabIndex = 6;
+            this.txtCodigoEntrenador.TextChanged += new System.EventHandler(this.txtCodigoEntrenador_TextChanged_1);
+            // 
+            // lblCodigoEntrenador
+            // 
+            this.lblCodigoEntrenador.AutoSize = true;
+            this.lblCodigoEntrenador.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCodigoEntrenador.Location = new System.Drawing.Point(36, 23);
+            this.lblCodigoEntrenador.Name = "lblCodigoEntrenador";
+            this.lblCodigoEntrenador.Size = new System.Drawing.Size(119, 16);
+            this.lblCodigoEntrenador.TabIndex = 5;
+            this.lblCodigoEntrenador.Text = "Codigo entrenador";
+            // 
+            // btnEliminarRegistro
+            // 
+            this.btnEliminarRegistro.Enabled = false;
+            this.btnEliminarRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarRegistro.Location = new System.Drawing.Point(171, 45);
+            this.btnEliminarRegistro.Name = "btnEliminarRegistro";
+            this.btnEliminarRegistro.Size = new System.Drawing.Size(115, 26);
+            this.btnEliminarRegistro.TabIndex = 4;
+            this.btnEliminarRegistro.Text = "Eliminar";
+            this.btnEliminarRegistro.UseVisualStyleBackColor = true;
+            this.btnEliminarRegistro.Click += new System.EventHandler(this.btnEliminarRegistro_Click_1);
+            // 
             // frmConsultaEntrenador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(713, 360);
+            this.ClientSize = new System.Drawing.Size(713, 435);
+            this.Controls.Add(this.grpEliminarRegistro);
             this.Controls.Add(this.gpConsulta);
             this.Name = "frmConsultaEntrenador";
             this.Text = "Consulta Entrenadores";
             this.Load += new System.EventHandler(this.frmConsultaEntrenador_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgEntrenadores)).EndInit();
             this.gpConsulta.ResumeLayout(false);
+            this.grpEliminarRegistro.ResumeLayout(false);
+            this.grpEliminarRegistro.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -140,5 +191,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn clDeporte;
         private System.Windows.Forms.Button btnListarEntrenadores;
         private System.Windows.Forms.GroupBox gpConsulta;
+        private System.Windows.Forms.GroupBox grpEliminarRegistro;
+        private System.Windows.Forms.TextBox txtCodigoEntrenador;
+        private System.Windows.Forms.Label lblCodigoEntrenador;
+        private System.Windows.Forms.Button btnEliminarRegistro;
     }
 }

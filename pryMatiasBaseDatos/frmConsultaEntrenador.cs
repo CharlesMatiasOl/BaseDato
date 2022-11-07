@@ -69,12 +69,61 @@ namespace pryMatiasBaseDatos
 
         private void btnEliminarRegistro_Click(object sender, EventArgs e)
         {
-           
+            string codigo = Convert.ToString(txtCodigoEntrenador.Text);
+
+
+            try
+            {
+
+                conexionBase = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source =" + rutaEntrenador);
+                queQuierodeEntrenador.Connection = conexionBase;
+                conexionBase.Open();
+
+                queQuierodeEntrenador.CommandType = CommandType.Text;
+                queQuierodeEntrenador.CommandText = "DELETE FROM ENTRENADORES " +
+                    "WHERE('" + codigo + "'=[CODIGO DEPORTISTA])";
+                queQuierodeEntrenador.ExecuteNonQuery();
+                MessageBox.Show("El registro fue eleminado");
+                txtCodigoEntrenador.Text = "";
+                txtCodigoEntrenador.Focus();
+
+
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Tu registro no fue elminado");
+                //throw;
+            }
+            conexionBase.Close();
+
+        }
+
+        private void Verificacion()
+        {
+            if (txtCodigoEntrenador.Text != "")
+            {
+                btnEliminarRegistro.Enabled = true;
+            }
+            else
+            {
+                btnEliminarRegistro.Enabled = false;
+            }
         }
 
         private void txtCodigoEntrenador_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnEliminarRegistro_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCodigoEntrenador_TextChanged_1(object sender, EventArgs e)
+        {
+            Verificacion();
         }
     }
 }

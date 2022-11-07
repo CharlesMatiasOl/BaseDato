@@ -137,6 +137,7 @@
             this.txtCodigoDeportista.Name = "txtCodigoDeportista";
             this.txtCodigoDeportista.Size = new System.Drawing.Size(121, 20);
             this.txtCodigoDeportista.TabIndex = 6;
+            this.txtCodigoDeportista.TextChanged += new System.EventHandler(this.txtCodigoDeportista_TextChanged);
             // 
             // lblCodigodeportista
             // 
@@ -144,9 +145,9 @@
             this.lblCodigodeportista.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCodigodeportista.Location = new System.Drawing.Point(36, 23);
             this.lblCodigodeportista.Name = "lblCodigodeportista";
-            this.lblCodigodeportista.Size = new System.Drawing.Size(117, 16);
+            this.lblCodigodeportista.Size = new System.Drawing.Size(114, 16);
             this.lblCodigodeportista.TabIndex = 5;
-            this.lblCodigodeportista.Text = "Codigo  deportista";
+            this.lblCodigodeportista.Text = "Codigo deportista";
             // 
             // btnEliminarRegistro
             // 
@@ -158,6 +159,7 @@
             this.btnEliminarRegistro.TabIndex = 4;
             this.btnEliminarRegistro.Text = "Eliminar";
             this.btnEliminarRegistro.UseVisualStyleBackColor = true;
+            this.btnEliminarRegistro.Click += new System.EventHandler(this.btnEliminarRegistro_Click);
             // 
             // frmConsultaDeportista
             // 
