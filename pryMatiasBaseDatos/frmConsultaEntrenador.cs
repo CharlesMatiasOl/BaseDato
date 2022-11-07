@@ -69,6 +69,28 @@ namespace pryMatiasBaseDatos
 
         private void btnEliminarRegistro_Click(object sender, EventArgs e)
         {
+           
+        }
+
+        private void Verificacion()
+        {
+            if (txtCodigoEntrenador.Text != "")
+            {
+                btnEliminarRegistro.Enabled = true;
+            }
+            else
+            {
+                btnEliminarRegistro.Enabled = false;
+            }
+        }
+
+        private void txtCodigoEntrenador_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEliminarRegistro_Click_1(object sender, EventArgs e)
+        {
             string codigo = Convert.ToString(txtCodigoEntrenador.Text);
 
 
@@ -96,28 +118,6 @@ namespace pryMatiasBaseDatos
                 //throw;
             }
             conexionBase.Close();
-
-        }
-
-        private void Verificacion()
-        {
-            if (txtCodigoEntrenador.Text != "")
-            {
-                btnEliminarRegistro.Enabled = true;
-            }
-            else
-            {
-                btnEliminarRegistro.Enabled = false;
-            }
-        }
-
-        private void txtCodigoEntrenador_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnEliminarRegistro_Click_1(object sender, EventArgs e)
-        {
 
         }
 
