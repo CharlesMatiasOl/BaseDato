@@ -28,164 +28,125 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cmdGuardar = new System.Windows.Forms.Button();
-            this.cmdBuscar = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.gpDatosDeportista = new System.Windows.Forms.GroupBox();
             this.txtDeporte = new System.Windows.Forms.TextBox();
             this.txtProvincia = new System.Windows.Forms.TextBox();
             this.txtDireccion = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblProvincia = new System.Windows.Forms.Label();
+            this.lblDeporte = new System.Windows.Forms.Label();
+            this.lblDireccion = new System.Windows.Forms.Label();
             this.txtCodigoDeEntrenador = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
+            this.lblCodigoEntrenador = new System.Windows.Forms.Label();
+            this.gpDatosDeportista.SuspendLayout();
             this.SuspendLayout();
             // 
-            // cmdGuardar
+            // btnGuardar
             // 
-            this.cmdGuardar.Enabled = false;
-            this.cmdGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdGuardar.Location = new System.Drawing.Point(278, 268);
-            this.cmdGuardar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.cmdGuardar.Name = "cmdGuardar";
-            this.cmdGuardar.Size = new System.Drawing.Size(88, 27);
-            this.cmdGuardar.TabIndex = 14;
-            this.cmdGuardar.Text = "Guardar";
-            this.cmdGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Enabled = false;
+            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.Location = new System.Drawing.Point(277, 272);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(88, 27);
+            this.btnGuardar.TabIndex = 14;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
-            // cmdBuscar
+            // btnBuscar
             // 
-            this.cmdBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdBuscar.Location = new System.Drawing.Point(278, 60);
-            this.cmdBuscar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.cmdBuscar.Name = "cmdBuscar";
-            this.cmdBuscar.Size = new System.Drawing.Size(88, 27);
-            this.cmdBuscar.TabIndex = 13;
-            this.cmdBuscar.Text = "Buscar";
-            this.cmdBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.Location = new System.Drawing.Point(278, 60);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(88, 27);
+            this.btnBuscar.TabIndex = 13;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
-            // groupBox1
+            // gpDatosDeportista
             // 
-            this.groupBox1.Controls.Add(this.txtDeporte);
-            this.groupBox1.Controls.Add(this.txtProvincia);
-            this.groupBox1.Controls.Add(this.txtDireccion);
-            this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(30, 93);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.groupBox1.Size = new System.Drawing.Size(335, 162);
-            this.groupBox1.TabIndex = 12;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Datos del deportista";
+            this.gpDatosDeportista.Controls.Add(this.txtDeporte);
+            this.gpDatosDeportista.Controls.Add(this.txtProvincia);
+            this.gpDatosDeportista.Controls.Add(this.txtDireccion);
+            this.gpDatosDeportista.Controls.Add(this.lblProvincia);
+            this.gpDatosDeportista.Controls.Add(this.lblDeporte);
+            this.gpDatosDeportista.Controls.Add(this.lblDireccion);
+            this.gpDatosDeportista.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gpDatosDeportista.Location = new System.Drawing.Point(30, 93);
+            this.gpDatosDeportista.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.gpDatosDeportista.Name = "gpDatosDeportista";
+            this.gpDatosDeportista.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.gpDatosDeportista.Size = new System.Drawing.Size(335, 162);
+            this.gpDatosDeportista.TabIndex = 12;
+            this.gpDatosDeportista.TabStop = false;
+            this.gpDatosDeportista.Text = "Datos del deportista";
             // 
             // txtDeporte
             // 
             this.txtDeporte.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtDeporte.Location = new System.Drawing.Point(144, 120);
+            this.txtDeporte.Location = new System.Drawing.Point(143, 120);
             this.txtDeporte.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtDeporte.Name = "txtDeporte";
             this.txtDeporte.Size = new System.Drawing.Size(184, 21);
             this.txtDeporte.TabIndex = 4;
+            this.txtDeporte.TextChanged += new System.EventHandler(this.txtDeporte_TextChanged);
             // 
             // txtProvincia
             // 
             this.txtProvincia.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtProvincia.Location = new System.Drawing.Point(144, 76);
+            this.txtProvincia.Location = new System.Drawing.Point(143, 77);
             this.txtProvincia.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtProvincia.Name = "txtProvincia";
             this.txtProvincia.Size = new System.Drawing.Size(184, 21);
             this.txtProvincia.TabIndex = 6;
+            this.txtProvincia.TextChanged += new System.EventHandler(this.txtProvincia_TextChanged);
             // 
             // txtDireccion
             // 
             this.txtDireccion.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtDireccion.Location = new System.Drawing.Point(144, 35);
+            this.txtDireccion.Location = new System.Drawing.Point(143, 35);
             this.txtDireccion.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(184, 21);
             this.txtDireccion.TabIndex = 7;
+            this.txtDireccion.TextChanged += new System.EventHandler(this.txtDireccion_TextChanged);
             // 
-            // label11
+            // lblProvincia
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(162, 179);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(0, 15);
-            this.label11.TabIndex = 9;
+            this.lblProvincia.AutoSize = true;
+            this.lblProvincia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProvincia.Location = new System.Drawing.Point(7, 80);
+            this.lblProvincia.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblProvincia.Name = "lblProvincia";
+            this.lblProvincia.Size = new System.Drawing.Size(57, 15);
+            this.lblProvincia.TabIndex = 4;
+            this.lblProvincia.Text = "Provincia";
             // 
-            // label10
+            // lblDeporte
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(159, 144);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(0, 15);
-            this.label10.TabIndex = 8;
+            this.lblDeporte.AutoSize = true;
+            this.lblDeporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDeporte.Location = new System.Drawing.Point(7, 123);
+            this.lblDeporte.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDeporte.Name = "lblDeporte";
+            this.lblDeporte.Size = new System.Drawing.Size(51, 15);
+            this.lblDeporte.TabIndex = 3;
+            this.lblDeporte.Text = "Deporte";
             // 
-            // label9
+            // lblDireccion
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(162, 70);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(0, 15);
-            this.label9.TabIndex = 7;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(159, 106);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(0, 15);
-            this.label8.TabIndex = 6;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(7, 80);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(57, 15);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "Provincia";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(7, 123);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(51, 15);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "Deporte";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(7, 38);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(59, 15);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Direccion";
+            this.lblDireccion.AutoSize = true;
+            this.lblDireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDireccion.Location = new System.Drawing.Point(7, 38);
+            this.lblDireccion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDireccion.Name = "lblDireccion";
+            this.lblDireccion.Size = new System.Drawing.Size(59, 15);
+            this.lblDireccion.TabIndex = 2;
+            this.lblDireccion.Text = "Direccion";
             // 
             // txtCodigoDeEntrenador
             // 
@@ -196,34 +157,36 @@
             this.txtCodigoDeEntrenador.Name = "txtCodigoDeEntrenador";
             this.txtCodigoDeEntrenador.Size = new System.Drawing.Size(184, 21);
             this.txtCodigoDeEntrenador.TabIndex = 11;
+            this.txtCodigoDeEntrenador.TextChanged += new System.EventHandler(this.txtCodigoDeEntrenador_TextChanged);
             // 
-            // label1
+            // lblCodigoEntrenador
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(27, 30);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 15);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "Codigo entrenador";
+            this.lblCodigoEntrenador.AutoSize = true;
+            this.lblCodigoEntrenador.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCodigoEntrenador.Location = new System.Drawing.Point(27, 30);
+            this.lblCodigoEntrenador.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCodigoEntrenador.Name = "lblCodigoEntrenador";
+            this.lblCodigoEntrenador.Size = new System.Drawing.Size(109, 15);
+            this.lblCodigoEntrenador.TabIndex = 10;
+            this.lblCodigoEntrenador.Text = "Codigo entrenador";
             // 
             // frmModificacionEntrenador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(393, 331);
-            this.Controls.Add(this.cmdGuardar);
-            this.Controls.Add(this.cmdBuscar);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.btnGuardar);
+            this.Controls.Add(this.btnBuscar);
+            this.Controls.Add(this.gpDatosDeportista);
             this.Controls.Add(this.txtCodigoDeEntrenador);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblCodigoEntrenador);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "frmModificacionEntrenador";
-            this.Text = "frmModificacionEntrenador";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.Text = "Modificacion Entrenadores";
+            this.Load += new System.EventHandler(this.frmModificacionEntrenador_Load);
+            this.gpDatosDeportista.ResumeLayout(false);
+            this.gpDatosDeportista.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -231,20 +194,16 @@
 
         #endregion
 
-        private System.Windows.Forms.Button cmdGuardar;
-        private System.Windows.Forms.Button cmdBuscar;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.GroupBox gpDatosDeportista;
         private System.Windows.Forms.TextBox txtDeporte;
         private System.Windows.Forms.TextBox txtProvincia;
         private System.Windows.Forms.TextBox txtDireccion;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblProvincia;
+        private System.Windows.Forms.Label lblDeporte;
+        private System.Windows.Forms.Label lblDireccion;
         private System.Windows.Forms.TextBox txtCodigoDeEntrenador;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblCodigoEntrenador;
     }
 }

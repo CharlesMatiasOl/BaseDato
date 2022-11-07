@@ -30,17 +30,17 @@
         {
             this.grpConsultas = new System.Windows.Forms.GroupBox();
             this.dtgDeportistas = new System.Windows.Forms.DataGridView();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clDeporte = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clApellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clDireccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clEdad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnListarDeportista = new System.Windows.Forms.Button();
             this.grpEliminarRegistro = new System.Windows.Forms.GroupBox();
             this.txtCodigoDeportista = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.cmdEliminarRegistro = new System.Windows.Forms.Button();
+            this.lblCodigodeportista = new System.Windows.Forms.Label();
+            this.btnEliminarRegistro = new System.Windows.Forms.Button();
             this.grpConsultas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgDeportistas)).BeginInit();
             this.grpEliminarRegistro.SuspendLayout();
@@ -61,51 +61,51 @@
             // 
             this.dtgDeportistas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgDeportistas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column6,
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5});
+            this.clDeporte,
+            this.clCodigo,
+            this.clNombre,
+            this.clApellido,
+            this.clDireccion,
+            this.clEdad});
             this.dtgDeportistas.Location = new System.Drawing.Point(16, 19);
             this.dtgDeportistas.Name = "dtgDeportistas";
             this.dtgDeportistas.Size = new System.Drawing.Size(643, 220);
             this.dtgDeportistas.TabIndex = 2;
             // 
-            // Column6
+            // clDeporte
             // 
-            this.Column6.HeaderText = "Codigo";
-            this.Column6.Name = "Column6";
+            this.clDeporte.HeaderText = "Codigo";
+            this.clDeporte.Name = "clDeporte";
             // 
-            // Column1
+            // clCodigo
             // 
-            this.Column1.HeaderText = "Nombre";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
+            this.clCodigo.HeaderText = "Nombre";
+            this.clCodigo.Name = "clCodigo";
+            this.clCodigo.ReadOnly = true;
             // 
-            // Column2
+            // clNombre
             // 
-            this.Column2.HeaderText = "Apellido";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
+            this.clNombre.HeaderText = "Apellido";
+            this.clNombre.Name = "clNombre";
+            this.clNombre.ReadOnly = true;
             // 
-            // Column3
+            // clApellido
             // 
-            this.Column3.HeaderText = "Direccion";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
+            this.clApellido.HeaderText = "Direccion";
+            this.clApellido.Name = "clApellido";
+            this.clApellido.ReadOnly = true;
             // 
-            // Column4
+            // clDireccion
             // 
-            this.Column4.HeaderText = "Edad ";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
+            this.clDireccion.HeaderText = "Edad ";
+            this.clDireccion.Name = "clDireccion";
+            this.clDireccion.ReadOnly = true;
             // 
-            // Column5
+            // clEdad
             // 
-            this.Column5.HeaderText = "Deporte";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
+            this.clEdad.HeaderText = "Deporte";
+            this.clEdad.Name = "clEdad";
+            this.clEdad.ReadOnly = true;
             // 
             // btnListarDeportista
             // 
@@ -121,8 +121,8 @@
             // grpEliminarRegistro
             // 
             this.grpEliminarRegistro.Controls.Add(this.txtCodigoDeportista);
-            this.grpEliminarRegistro.Controls.Add(this.label1);
-            this.grpEliminarRegistro.Controls.Add(this.cmdEliminarRegistro);
+            this.grpEliminarRegistro.Controls.Add(this.lblCodigodeportista);
+            this.grpEliminarRegistro.Controls.Add(this.btnEliminarRegistro);
             this.grpEliminarRegistro.Location = new System.Drawing.Point(384, 332);
             this.grpEliminarRegistro.Name = "grpEliminarRegistro";
             this.grpEliminarRegistro.Size = new System.Drawing.Size(304, 85);
@@ -138,26 +138,26 @@
             this.txtCodigoDeportista.Size = new System.Drawing.Size(121, 20);
             this.txtCodigoDeportista.TabIndex = 6;
             // 
-            // label1
+            // lblCodigodeportista
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(36, 23);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(117, 16);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Codigo  deportista";
+            this.lblCodigodeportista.AutoSize = true;
+            this.lblCodigodeportista.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCodigodeportista.Location = new System.Drawing.Point(36, 23);
+            this.lblCodigodeportista.Name = "lblCodigodeportista";
+            this.lblCodigodeportista.Size = new System.Drawing.Size(117, 16);
+            this.lblCodigodeportista.TabIndex = 5;
+            this.lblCodigodeportista.Text = "Codigo  deportista";
             // 
-            // cmdEliminarRegistro
+            // btnEliminarRegistro
             // 
-            this.cmdEliminarRegistro.Enabled = false;
-            this.cmdEliminarRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdEliminarRegistro.Location = new System.Drawing.Point(166, 45);
-            this.cmdEliminarRegistro.Name = "cmdEliminarRegistro";
-            this.cmdEliminarRegistro.Size = new System.Drawing.Size(121, 26);
-            this.cmdEliminarRegistro.TabIndex = 4;
-            this.cmdEliminarRegistro.Text = "Eliminar";
-            this.cmdEliminarRegistro.UseVisualStyleBackColor = true;
+            this.btnEliminarRegistro.Enabled = false;
+            this.btnEliminarRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarRegistro.Location = new System.Drawing.Point(166, 45);
+            this.btnEliminarRegistro.Name = "btnEliminarRegistro";
+            this.btnEliminarRegistro.Size = new System.Drawing.Size(121, 26);
+            this.btnEliminarRegistro.TabIndex = 4;
+            this.btnEliminarRegistro.Text = "Eliminar";
+            this.btnEliminarRegistro.UseVisualStyleBackColor = true;
             // 
             // frmConsultaDeportista
             // 
@@ -167,7 +167,7 @@
             this.Controls.Add(this.grpEliminarRegistro);
             this.Controls.Add(this.grpConsultas);
             this.Name = "frmConsultaDeportista";
-            this.Text = "frmConsultaDeportista";
+            this.Text = "Consulta Deportistas";
             this.Load += new System.EventHandler(this.frmConsultaDeportista_Load);
             this.grpConsultas.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgDeportistas)).EndInit();
@@ -181,16 +181,16 @@
 
         private System.Windows.Forms.GroupBox grpConsultas;
         private System.Windows.Forms.DataGridView dtgDeportistas;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clDeporte;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clCodigo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clNombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clApellido;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clDireccion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clEdad;
         private System.Windows.Forms.Button btnListarDeportista;
         private System.Windows.Forms.GroupBox grpEliminarRegistro;
         private System.Windows.Forms.TextBox txtCodigoDeportista;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button cmdEliminarRegistro;
+        private System.Windows.Forms.Label lblCodigodeportista;
+        private System.Windows.Forms.Button btnEliminarRegistro;
     }
 }

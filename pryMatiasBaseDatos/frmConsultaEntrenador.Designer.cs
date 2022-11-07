@@ -29,68 +29,68 @@
         private void InitializeComponent()
         {
             this.dtgEntrenadores = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clCodigoEntrenadores = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clApellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clDireccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clProvincia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clDeporte = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnListarEntrenadores = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gpConsulta = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtgEntrenadores)).BeginInit();
-            this.groupBox1.SuspendLayout();
+            this.gpConsulta.SuspendLayout();
             this.SuspendLayout();
             // 
             // dtgEntrenadores
             // 
             this.dtgEntrenadores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgEntrenadores.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5,
-            this.Column6});
+            this.clCodigoEntrenadores,
+            this.clNombre,
+            this.clApellido,
+            this.clDireccion,
+            this.clProvincia,
+            this.clDeporte});
             this.dtgEntrenadores.Location = new System.Drawing.Point(19, 29);
             this.dtgEntrenadores.Name = "dtgEntrenadores";
             this.dtgEntrenadores.Size = new System.Drawing.Size(636, 220);
             this.dtgEntrenadores.TabIndex = 1;
             // 
-            // Column1
+            // clCodigoEntrenadores
             // 
-            this.Column1.HeaderText = "Codigo Entrenadores";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
+            this.clCodigoEntrenadores.HeaderText = "Codigo Entrenadores";
+            this.clCodigoEntrenadores.Name = "clCodigoEntrenadores";
+            this.clCodigoEntrenadores.ReadOnly = true;
             // 
-            // Column2
+            // clNombre
             // 
-            this.Column2.HeaderText = "Nombre";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
+            this.clNombre.HeaderText = "Nombre";
+            this.clNombre.Name = "clNombre";
+            this.clNombre.ReadOnly = true;
             // 
-            // Column3
+            // clApellido
             // 
-            this.Column3.HeaderText = "Apellido";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
+            this.clApellido.HeaderText = "Apellido";
+            this.clApellido.Name = "clApellido";
+            this.clApellido.ReadOnly = true;
             // 
-            // Column4
+            // clDireccion
             // 
-            this.Column4.HeaderText = "Direccion";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
+            this.clDireccion.HeaderText = "Direccion";
+            this.clDireccion.Name = "clDireccion";
+            this.clDireccion.ReadOnly = true;
             // 
-            // Column5
+            // clProvincia
             // 
-            this.Column5.HeaderText = "Provincia";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
+            this.clProvincia.HeaderText = "Provincia";
+            this.clProvincia.Name = "clProvincia";
+            this.clProvincia.ReadOnly = true;
             // 
-            // Column6
+            // clDeporte
             // 
-            this.Column6.HeaderText = "Deporte";
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
+            this.clDeporte.HeaderText = "Deporte";
+            this.clDeporte.Name = "clDeporte";
+            this.clDeporte.ReadOnly = true;
             // 
             // btnListarEntrenadores
             // 
@@ -103,28 +103,28 @@
             this.btnListarEntrenadores.UseVisualStyleBackColor = true;
             this.btnListarEntrenadores.Click += new System.EventHandler(this.btnListarEntrenadores_Click);
             // 
-            // groupBox1
+            // gpConsulta
             // 
-            this.groupBox1.Controls.Add(this.dtgEntrenadores);
-            this.groupBox1.Controls.Add(this.btnListarEntrenadores);
-            this.groupBox1.Location = new System.Drawing.Point(24, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(673, 310);
-            this.groupBox1.TabIndex = 9;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Consulta";
+            this.gpConsulta.Controls.Add(this.dtgEntrenadores);
+            this.gpConsulta.Controls.Add(this.btnListarEntrenadores);
+            this.gpConsulta.Location = new System.Drawing.Point(24, 12);
+            this.gpConsulta.Name = "gpConsulta";
+            this.gpConsulta.Size = new System.Drawing.Size(673, 310);
+            this.gpConsulta.TabIndex = 9;
+            this.gpConsulta.TabStop = false;
+            this.gpConsulta.Text = "Consulta";
             // 
             // frmConsultaEntrenador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(713, 360);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.gpConsulta);
             this.Name = "frmConsultaEntrenador";
-            this.Text = "frmConsultaEntrenador";
+            this.Text = "Consulta Entrenadores";
             this.Load += new System.EventHandler(this.frmConsultaEntrenador_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgEntrenadores)).EndInit();
-            this.groupBox1.ResumeLayout(false);
+            this.gpConsulta.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -132,13 +132,13 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dtgEntrenadores;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clCodigoEntrenadores;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clNombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clApellido;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clDireccion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clProvincia;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clDeporte;
         private System.Windows.Forms.Button btnListarEntrenadores;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gpConsulta;
     }
 }

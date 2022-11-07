@@ -44,8 +44,8 @@ namespace pryMatiasBaseDatos
             string NombreDeportista = txtNombreDeportista.Text;
             string ApellidoDeportista = txtApellidoDeportista.Text;
             string DireccionDeportista = Convert.ToString(txtDireccionDeportista.Text);
-            Int32 TelefonoDeportistas = Convert.ToInt32(mskTelefono.Text);
-            Int32 EdadDeportista = Convert.ToInt32(mskEdad.Text);
+            Int32 TelefonoDeportistas = Convert.ToInt32(txtTelefono.Text);
+            Int32 EdadDeportista = Convert.ToInt32(txtEdad.Text);
             string Deporte = Convert.ToString(lstDeporte.SelectedItem);
 
 
@@ -75,8 +75,8 @@ namespace pryMatiasBaseDatos
             txtCodigoDeportista.Text = "";
             txtDireccionDeportista.Text = "";
             txtNombreDeportista.Text = "";
-            mskEdad.Text = "";
-            mskTelefono.Text = "";
+            txtEdad.Text = "";
+            txtTelefono.Text = "";
             lstDeporte.SelectedItem = -1;
             txtCodigoDeportista.Focus();
             lstDeporte.SelectedItem = "";
@@ -88,7 +88,7 @@ namespace pryMatiasBaseDatos
 
         private void Verificacion()
         {
-            if (txtApellidoDeportista.Text != "" && txtCodigoDeportista.Text != "" && txtDireccionDeportista.Text != "" && txtNombreDeportista.Text != "" && mskEdad.Text != "" && lstDeporte.SelectedIndex >= 0 && mskTelefono.Text != "")
+            if (txtApellidoDeportista.Text != "" && txtCodigoDeportista.Text != "" && txtDireccionDeportista.Text != "" && txtNombreDeportista.Text != "" && txtEdad.Text != "" && lstDeporte.SelectedIndex >= 0 && txtTelefono.Text != "")
             {
                 btnRegistroDeportistas.Enabled = true;
             }

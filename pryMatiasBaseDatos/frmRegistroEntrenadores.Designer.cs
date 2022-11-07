@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblRegistroEntrenadores = new System.Windows.Forms.Label();
+            this.lblProvincia = new System.Windows.Forms.Label();
+            this.lblDeporte = new System.Windows.Forms.Label();
+            this.lblDireccion = new System.Windows.Forms.Label();
+            this.lblApellido = new System.Windows.Forms.Label();
+            this.lblNombre = new System.Windows.Forms.Label();
+            this.lblCodigoEntrenador = new System.Windows.Forms.Label();
             this.txtProvincia = new System.Windows.Forms.TextBox();
             this.txtCodigoEntrenador = new System.Windows.Forms.TextBox();
             this.txtApellidoEntrenador = new System.Windows.Forms.TextBox();
@@ -48,75 +48,75 @@
             this.StatusBDEntrenador.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // lblRegistroEntrenadores
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(104, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(196, 24);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Registro entrenadores";
+            this.lblRegistroEntrenadores.AutoSize = true;
+            this.lblRegistroEntrenadores.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRegistroEntrenadores.Location = new System.Drawing.Point(104, 9);
+            this.lblRegistroEntrenadores.Name = "lblRegistroEntrenadores";
+            this.lblRegistroEntrenadores.Size = new System.Drawing.Size(196, 24);
+            this.lblRegistroEntrenadores.TabIndex = 1;
+            this.lblRegistroEntrenadores.Text = "Registro entrenadores";
             // 
-            // label6
+            // lblProvincia
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(30, 265);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(72, 20);
-            this.label6.TabIndex = 40;
-            this.label6.Text = "Provincia";
+            this.lblProvincia.AutoSize = true;
+            this.lblProvincia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProvincia.Location = new System.Drawing.Point(30, 265);
+            this.lblProvincia.Name = "lblProvincia";
+            this.lblProvincia.Size = new System.Drawing.Size(72, 20);
+            this.lblProvincia.TabIndex = 40;
+            this.lblProvincia.Text = "Provincia";
             // 
-            // label7
+            // lblDeporte
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(32, 312);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(67, 20);
-            this.label7.TabIndex = 39;
-            this.label7.Text = "Deporte";
+            this.lblDeporte.AutoSize = true;
+            this.lblDeporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDeporte.Location = new System.Drawing.Point(32, 312);
+            this.lblDeporte.Name = "lblDeporte";
+            this.lblDeporte.Size = new System.Drawing.Size(67, 20);
+            this.lblDeporte.TabIndex = 39;
+            this.lblDeporte.Text = "Deporte";
             // 
-            // label4
+            // lblDireccion
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(30, 218);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(75, 20);
-            this.label4.TabIndex = 38;
-            this.label4.Text = "Direccion";
+            this.lblDireccion.AutoSize = true;
+            this.lblDireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDireccion.Location = new System.Drawing.Point(30, 218);
+            this.lblDireccion.Name = "lblDireccion";
+            this.lblDireccion.Size = new System.Drawing.Size(75, 20);
+            this.lblDireccion.TabIndex = 38;
+            this.lblDireccion.Text = "Direccion";
             // 
-            // label3
+            // lblApellido
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(30, 171);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 20);
-            this.label3.TabIndex = 37;
-            this.label3.Text = "Apellido";
+            this.lblApellido.AutoSize = true;
+            this.lblApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblApellido.Location = new System.Drawing.Point(30, 171);
+            this.lblApellido.Name = "lblApellido";
+            this.lblApellido.Size = new System.Drawing.Size(65, 20);
+            this.lblApellido.TabIndex = 37;
+            this.lblApellido.Text = "Apellido";
             // 
-            // label2
+            // lblNombre
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(30, 124);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 20);
-            this.label2.TabIndex = 36;
-            this.label2.Text = "Nombre";
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.Location = new System.Drawing.Point(30, 124);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(65, 20);
+            this.lblNombre.TabIndex = 36;
+            this.lblNombre.Text = "Nombre";
             // 
-            // label5
+            // lblCodigoEntrenador
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(30, 77);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(141, 20);
-            this.label5.TabIndex = 35;
-            this.label5.Text = "Codigo entrenador";
+            this.lblCodigoEntrenador.AutoSize = true;
+            this.lblCodigoEntrenador.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCodigoEntrenador.Location = new System.Drawing.Point(30, 77);
+            this.lblCodigoEntrenador.Name = "lblCodigoEntrenador";
+            this.lblCodigoEntrenador.Size = new System.Drawing.Size(141, 20);
+            this.lblCodigoEntrenador.TabIndex = 35;
+            this.lblCodigoEntrenador.Text = "Codigo entrenador";
             // 
             // txtProvincia
             // 
@@ -201,7 +201,7 @@
             this.StatusBDEntrenador.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lblFechaActual,
             this.lblEstado});
-            this.StatusBDEntrenador.Location = new System.Drawing.Point(0, 461);
+            this.StatusBDEntrenador.Location = new System.Drawing.Point(0, 417);
             this.StatusBDEntrenador.Name = "StatusBDEntrenador";
             this.StatusBDEntrenador.Size = new System.Drawing.Size(407, 22);
             this.StatusBDEntrenador.TabIndex = 48;
@@ -221,7 +221,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(407, 483);
+            this.ClientSize = new System.Drawing.Size(407, 439);
             this.Controls.Add(this.StatusBDEntrenador);
             this.Controls.Add(this.btnRegistroEntrenadores);
             this.Controls.Add(this.lstDeporte);
@@ -230,16 +230,16 @@
             this.Controls.Add(this.txtApellidoEntrenador);
             this.Controls.Add(this.txtDireccionEntrenador);
             this.Controls.Add(this.txtNombreEntrenador);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblProvincia);
+            this.Controls.Add(this.lblDeporte);
+            this.Controls.Add(this.lblDireccion);
+            this.Controls.Add(this.lblApellido);
+            this.Controls.Add(this.lblNombre);
+            this.Controls.Add(this.lblCodigoEntrenador);
+            this.Controls.Add(this.lblRegistroEntrenadores);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "frmRegistroEntrenadores";
-            this.Text = "frmRegistroEntrenadores";
+            this.Text = "Registro Entrenadores";
             this.Load += new System.EventHandler(this.frmRegistroEntrenadores_Load);
             this.StatusBDEntrenador.ResumeLayout(false);
             this.StatusBDEntrenador.PerformLayout();
@@ -250,13 +250,13 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblRegistroEntrenadores;
+        private System.Windows.Forms.Label lblProvincia;
+        private System.Windows.Forms.Label lblDeporte;
+        private System.Windows.Forms.Label lblDireccion;
+        private System.Windows.Forms.Label lblApellido;
+        private System.Windows.Forms.Label lblNombre;
+        private System.Windows.Forms.Label lblCodigoEntrenador;
         private System.Windows.Forms.TextBox txtProvincia;
         private System.Windows.Forms.TextBox txtCodigoEntrenador;
         private System.Windows.Forms.TextBox txtApellidoEntrenador;
