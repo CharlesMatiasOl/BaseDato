@@ -15,10 +15,9 @@ namespace pryMatiasBaseDatos
         private OleDbConnection conexion = new OleDbConnection();
         private OleDbCommand comando = new OleDbCommand();
         private OleDbDataAdapter adapatador = new OleDbDataAdapter();
-        //Ruta para base de datos a utilizar
-        private string Ruta = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source= " + "DEPORTE.accdb";
+        
+        private string Ruta = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source= " + "DEPORTE.accdb";//Ruta para base de datos a utilizar
         private string Tabla = "DEPORTISTA";
-        //variables a cambiar o eliminar
         private string codigoDEPORTISTA;
         private string nombre;
         private string apellido;
@@ -63,14 +62,13 @@ namespace pryMatiasBaseDatos
             set { deporte = value; }
         }
 
-        //realizamos los procedimientos a llamar en los distintos botones de comando
+        
         public void Buscar(string codigo)
         {
             try
             {
                 conexion.ConnectionString = Ruta;
                 conexion.Open();
-
                 comando.Connection = conexion;
                 comando.CommandType = CommandType.TableDirect;
                 comando.CommandText = Tabla;

@@ -14,14 +14,12 @@ namespace pryMatiasBaseDatos
     {
        
         
-        private OleDbConnection conexion = new OleDbConnection();
-        private OleDbCommand comando = new OleDbCommand();
-        private OleDbDataAdapter adapatador = new OleDbDataAdapter();
+        private OleDbConnection conexion = new OleDbConnection(); //conexion con la base de datos
+        private OleDbCommand comando = new OleDbCommand();//mandar un comando para la base
+        private OleDbDataAdapter adapatador = new OleDbDataAdapter();//Adapta los datos de la base
        
         private string Ruta = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source= " + "DEPORTE.accdb"; //Ruta para base de datos a utilizar
         private string Tabla = "ENTRENADORES";
-
-       
         private string codigoEntrenadores;
         private string nombre;
         private string apellido;
@@ -66,7 +64,6 @@ namespace pryMatiasBaseDatos
             {
                 conexion.ConnectionString = Ruta;
                 conexion.Open();
-
                 comando.Connection = conexion;
                 comando.CommandType = CommandType.TableDirect;
                 comando.CommandText = Tabla;
@@ -105,7 +102,7 @@ namespace pryMatiasBaseDatos
             {
                 //usaremos sentencias de SQL
                 string Sql = "UPDATE ENTRENADORES SET DIRECCION= '" + Direccion + "', PROVINCIA='" + Provincia + "', DEPORTE='" + Deportes + "' WHERE [CODIGO DEPORTISTA] = '" + codigoEntrenador + "'";
-                //Conecto la base de datos
+                
                 conexion.ConnectionString = Ruta;
                 conexion.Open();
                 comando.Connection = conexion;
