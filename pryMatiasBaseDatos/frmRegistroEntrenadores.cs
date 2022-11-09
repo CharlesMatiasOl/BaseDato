@@ -53,11 +53,10 @@ namespace pryMatiasBaseDatos
 
             try
             {
-                conexionBD = new OleDbConnection(RutaBD);
+                conexionBD = new OleDbConnection(RutaBD);//conexion al origen de datos
                 conexionBD.Open();
                 comandoBD = new OleDbCommand();
-
-                comandoBD.Connection = conexionBD; //conexion al origen de datos
+                comandoBD.Connection = conexionBD; 
                 comandoBD.CommandType = CommandType.Text; //comando para insertar datos
                 comandoBD.CommandText = " INSERT INTO " + " ENTRENADORES ([CODIGO DEPORTISTA], [NOMBRE], [APELLIDO], [DIRECCION], [PROVINCIA], [DEPORTE])" +
                         " VALUES ('" + IdEntrenadores + "','" + NombreEntrenador + "','" + ApellidoEntrenador + "','" + DireccionEntrenador + "','" + ProvinciaEntrenador + "','" + Deporte + "')";

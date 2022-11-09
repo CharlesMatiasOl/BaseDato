@@ -204,6 +204,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "frmModificacionDeportista";
             this.Text = "Modificacion Deportistas";
+            this.Load += new System.EventHandler(this.frmModificacionDeportista_Load);
             this.gpDatosEntrenadores.ResumeLayout(false);
             this.gpDatosEntrenadores.PerformLayout();
             this.ResumeLayout(false);

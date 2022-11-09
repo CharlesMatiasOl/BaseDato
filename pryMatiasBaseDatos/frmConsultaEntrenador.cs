@@ -19,7 +19,7 @@ namespace pryMatiasBaseDatos
         OleDbConnection conexionBase;
         OleDbCommand queQuierodeEntrenador;
         OleDbDataReader lectorBaseEntrenador;
-        public string rutaEntrenador = "DEPORTE.accdb";//Variables globales
+        public string rutaEntrenador = "DEPORTE.accdb";
 
 
         public frmConsultaEntrenador()
@@ -37,15 +37,15 @@ namespace pryMatiasBaseDatos
             dtgEntrenadores.DataSource = null;
             dtgEntrenadores.Rows.Clear();
             try
-            {
+            {    //abrimos la base de datos
                 conexionBase = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source =" + rutaEntrenador); //conexion de la base de datos
-                conexionBase.Open(); //abrimos la base de datos
+                conexionBase.Open(); 
 
-                //utilziaremos los siguientes comandos para traer las tablas
+                //utilziaremos los comandos para traer las tablas
                 queQuierodeEntrenador = new OleDbCommand();
                 queQuierodeEntrenador.Connection = conexionBase;
                 queQuierodeEntrenador.CommandType = CommandType.TableDirect;
-                queQuierodeEntrenador.CommandText = "ENTRENADORES"; //le decimos que nos traiga de la base de datos, la tabla de entrenadores
+                queQuierodeEntrenador.CommandText = "ENTRENADORES"; //le decimos que nos traiga, la tabla de entrenadores
                 lectorBaseEntrenador = queQuierodeEntrenador.ExecuteReader();
 
                 while (lectorBaseEntrenador.Read()) // creamos el while para cargar los objetos en la grilla
@@ -124,6 +124,11 @@ namespace pryMatiasBaseDatos
         private void txtCodigoEntrenador_TextChanged_1(object sender, EventArgs e)
         {
             Verificacion();
+        }
+
+        private void dtgEntrenadores_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

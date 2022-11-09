@@ -51,16 +51,15 @@ namespace pryMatiasBaseDatos
 
             try
             {
-                conexionBD = new OleDbConnection(RutaBD);
+                conexionBD = new OleDbConnection(RutaBD);//conexion al origen de datos
                 conexionBD.Open();
                 comandoBD = new OleDbCommand();
-
-                comandoBD.Connection = conexionBD; //conexion al origen de datos
+                comandoBD.Connection = conexionBD; 
                 comandoBD.CommandType = CommandType.Text; //comando para insertar datos
                 comandoBD.CommandText = " INSERT INTO " + " DEPORTISTA ([CODIGO DEPORTISTA], [NOMBRE], [APELLIDO], [DIRECCION], [TELEFONO], [EDAD], [DEPORTE]) " +
                         " VALUES ('" + IdDeportista + "','" + NombreDeportista + "','" + ApellidoDeportista + "','" + DireccionDeportista + "','" + TelefonoDeportistas + "','" + EdadDeportista + "','" + Deporte + "')";
 
-                comandoBD.ExecuteNonQuery();//numero de filas afectadas
+                comandoBD.ExecuteNonQuery();
                 MessageBox.Show("Tus datos fueron ingresados con exito");
 
             }
@@ -81,9 +80,6 @@ namespace pryMatiasBaseDatos
             txtCodigoDeportista.Focus();
             lstDeporte.SelectedItem = "";
 
-            
-
-
         }
 
         private void Verificacion()
@@ -97,13 +93,6 @@ namespace pryMatiasBaseDatos
                 btnRegistroDeportistas.Enabled = false;
             }
         }
-
-
-
-
-
-
-
 
 
         private void txtCodigoDeportista_TextChanged(object sender, EventArgs e)

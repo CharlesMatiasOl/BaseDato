@@ -97,5 +97,10 @@ namespace pryMatiasBaseDatos
         {
             verificacion();
         }
+
+        private void frmModificacionDeportista_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

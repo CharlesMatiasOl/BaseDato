@@ -52,7 +52,7 @@
             this.grpConsultas.Controls.Add(this.btnListarDeportista);
             this.grpConsultas.Location = new System.Drawing.Point(12, 12);
             this.grpConsultas.Name = "grpConsultas";
-            this.grpConsultas.Size = new System.Drawing.Size(676, 302);
+            this.grpConsultas.Size = new System.Drawing.Size(647, 302);
             this.grpConsultas.TabIndex = 5;
             this.grpConsultas.TabStop = false;
             this.grpConsultas.Text = "Consulta";
@@ -67,9 +67,9 @@
             this.clApellido,
             this.clDireccion,
             this.clEdad});
-            this.dtgDeportistas.Location = new System.Drawing.Point(16, 19);
+            this.dtgDeportistas.Location = new System.Drawing.Point(6, 19);
             this.dtgDeportistas.Name = "dtgDeportistas";
-            this.dtgDeportistas.Size = new System.Drawing.Size(643, 220);
+            this.dtgDeportistas.Size = new System.Drawing.Size(635, 220);
             this.dtgDeportistas.TabIndex = 2;
             // 
             // clDeporte
@@ -110,20 +110,20 @@
             // btnListarDeportista
             // 
             this.btnListarDeportista.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnListarDeportista.Location = new System.Drawing.Point(538, 255);
+            this.btnListarDeportista.Location = new System.Drawing.Point(520, 254);
             this.btnListarDeportista.Name = "btnListarDeportista";
             this.btnListarDeportista.Size = new System.Drawing.Size(121, 27);
             this.btnListarDeportista.TabIndex = 3;
             this.btnListarDeportista.Text = "Listar";
             this.btnListarDeportista.UseVisualStyleBackColor = true;
-            this.btnListarDeportista.Click += new System.EventHandler(this.cmdListarDeportista_Click);
+            this.btnListarDeportista.Click += new System.EventHandler(this.btnListarDeportista_Click);
             // 
             // grpEliminarRegistro
             // 
             this.grpEliminarRegistro.Controls.Add(this.txtCodigoDeportista);
             this.grpEliminarRegistro.Controls.Add(this.lblCodigodeportista);
             this.grpEliminarRegistro.Controls.Add(this.btnEliminarRegistro);
-            this.grpEliminarRegistro.Location = new System.Drawing.Point(384, 332);
+            this.grpEliminarRegistro.Location = new System.Drawing.Point(355, 320);
             this.grpEliminarRegistro.Name = "grpEliminarRegistro";
             this.grpEliminarRegistro.Size = new System.Drawing.Size(304, 85);
             this.grpEliminarRegistro.TabIndex = 6;
@@ -133,7 +133,7 @@
             // txtCodigoDeportista
             // 
             this.txtCodigoDeportista.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtCodigoDeportista.Location = new System.Drawing.Point(166, 19);
+            this.txtCodigoDeportista.Location = new System.Drawing.Point(177, 19);
             this.txtCodigoDeportista.Name = "txtCodigoDeportista";
             this.txtCodigoDeportista.Size = new System.Drawing.Size(121, 20);
             this.txtCodigoDeportista.TabIndex = 6;
@@ -153,7 +153,7 @@
             // 
             this.btnEliminarRegistro.Enabled = false;
             this.btnEliminarRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminarRegistro.Location = new System.Drawing.Point(166, 45);
+            this.btnEliminarRegistro.Location = new System.Drawing.Point(177, 45);
             this.btnEliminarRegistro.Name = "btnEliminarRegistro";
             this.btnEliminarRegistro.Size = new System.Drawing.Size(121, 26);
             this.btnEliminarRegistro.TabIndex = 4;
@@ -165,7 +165,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(708, 429);
+            this.ClientSize = new System.Drawing.Size(671, 418);
             this.Controls.Add(this.grpEliminarRegistro);
             this.Controls.Add(this.grpConsultas);
             this.Name = "frmConsultaDeportista";

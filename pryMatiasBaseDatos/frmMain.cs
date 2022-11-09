@@ -81,5 +81,10 @@ namespace pryMatiasBaseDatos
             frmModificacionEntrenador objVentana = new frmModificacionEntrenador();
             objVentana.ShowDialog();
         }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

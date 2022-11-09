@@ -27,7 +27,7 @@ namespace pryMatiasBaseDatos
         private string provincia;
         private string deporte;
 
-        public string codigoEntrenador
+        public string codigoEntrenador//retorna el valor de la variable adentro 
         {
             get { return codigoEntrenadores; }
             set { codigoEntrenadores = value; }
@@ -60,9 +60,9 @@ namespace pryMatiasBaseDatos
 
         public void Buscar(string codigo)
         {
-            try
+            try//caso tenga alguna cosa mala 
             {
-                conexion.ConnectionString = Ruta;
+                conexion.ConnectionString = Ruta;//Busco en la base los datos 
                 conexion.Open();
                 comando.Connection = conexion;
                 comando.CommandType = CommandType.TableDirect;

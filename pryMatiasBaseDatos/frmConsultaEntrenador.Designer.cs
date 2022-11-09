@@ -56,10 +56,11 @@
             this.clDireccion,
             this.clProvincia,
             this.clDeporte});
-            this.dtgEntrenadores.Location = new System.Drawing.Point(19, 29);
+            this.dtgEntrenadores.Location = new System.Drawing.Point(6, 19);
             this.dtgEntrenadores.Name = "dtgEntrenadores";
             this.dtgEntrenadores.Size = new System.Drawing.Size(636, 220);
             this.dtgEntrenadores.TabIndex = 1;
+            this.dtgEntrenadores.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgEntrenadores_CellContentClick);
             // 
             // clCodigoEntrenadores
             // 
@@ -100,7 +101,7 @@
             // btnListarEntrenadores
             // 
             this.btnListarEntrenadores.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnListarEntrenadores.Location = new System.Drawing.Point(540, 265);
+            this.btnListarEntrenadores.Location = new System.Drawing.Point(527, 265);
             this.btnListarEntrenadores.Name = "btnListarEntrenadores";
             this.btnListarEntrenadores.Size = new System.Drawing.Size(115, 26);
             this.btnListarEntrenadores.TabIndex = 8;
@@ -112,9 +113,9 @@
             // 
             this.gpConsulta.Controls.Add(this.dtgEntrenadores);
             this.gpConsulta.Controls.Add(this.btnListarEntrenadores);
-            this.gpConsulta.Location = new System.Drawing.Point(24, 12);
+            this.gpConsulta.Location = new System.Drawing.Point(12, 12);
             this.gpConsulta.Name = "gpConsulta";
-            this.gpConsulta.Size = new System.Drawing.Size(673, 310);
+            this.gpConsulta.Size = new System.Drawing.Size(650, 310);
             this.gpConsulta.TabIndex = 9;
             this.gpConsulta.TabStop = false;
             this.gpConsulta.Text = "Consulta";
@@ -124,7 +125,7 @@
             this.grpEliminarRegistro.Controls.Add(this.txtCodigoEntrenador);
             this.grpEliminarRegistro.Controls.Add(this.lblCodigoEntrenador);
             this.grpEliminarRegistro.Controls.Add(this.btnEliminarRegistro);
-            this.grpEliminarRegistro.Location = new System.Drawing.Point(393, 338);
+            this.grpEliminarRegistro.Location = new System.Drawing.Point(358, 328);
             this.grpEliminarRegistro.Name = "grpEliminarRegistro";
             this.grpEliminarRegistro.Size = new System.Drawing.Size(304, 85);
             this.grpEliminarRegistro.TabIndex = 10;
@@ -134,7 +135,7 @@
             // txtCodigoEntrenador
             // 
             this.txtCodigoEntrenador.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtCodigoEntrenador.Location = new System.Drawing.Point(171, 19);
+            this.txtCodigoEntrenador.Location = new System.Drawing.Point(181, 19);
             this.txtCodigoEntrenador.Name = "txtCodigoEntrenador";
             this.txtCodigoEntrenador.Size = new System.Drawing.Size(115, 20);
             this.txtCodigoEntrenador.TabIndex = 6;
@@ -154,7 +155,7 @@
             // 
             this.btnEliminarRegistro.Enabled = false;
             this.btnEliminarRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminarRegistro.Location = new System.Drawing.Point(171, 45);
+            this.btnEliminarRegistro.Location = new System.Drawing.Point(181, 45);
             this.btnEliminarRegistro.Name = "btnEliminarRegistro";
             this.btnEliminarRegistro.Size = new System.Drawing.Size(115, 26);
             this.btnEliminarRegistro.TabIndex = 4;
@@ -166,7 +167,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(713, 435);
+            this.ClientSize = new System.Drawing.Size(672, 425);
             this.Controls.Add(this.grpEliminarRegistro);
             this.Controls.Add(this.gpConsulta);
             this.Name = "frmConsultaEntrenador";

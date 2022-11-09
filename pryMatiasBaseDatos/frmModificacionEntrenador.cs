@@ -52,7 +52,7 @@ namespace pryMatiasBaseDatos
             modificar.Provincia = provincia;
             modificar.Modificar(codigoEntrenador);
 
-            //limpiamos las cajas de texto
+            
             txtCodigoDeEntrenador.Text = "";
             txtDeporte.Text = "";
             txtDireccion.Text = "";

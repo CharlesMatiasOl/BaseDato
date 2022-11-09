@@ -29,7 +29,7 @@ namespace pryMatiasBaseDatos
 
         }
 
-        private void cmdListarDeportista_Click(object sender, EventArgs e)
+        private void btnListarDeportista_Click(object sender, EventArgs e)
         {
             dtgDeportistas.DataSource = null;
             dtgDeportistas.Rows.Clear();
